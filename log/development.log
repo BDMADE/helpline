@@ -304,3 +304,97 @@ Processing by Api::V1::UsersController#show as JSON
 Completed 200 OK in 12ms (Views: 6.7ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-09-05 14:46:28 +0600
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb (6.7ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-09-05 14:46:35 +0600
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Completed 404 Not Found in 22ms (ActiveRecord: 8.4ms)
+
+
+
+Errno::EACCES - Permission denied @ dir_s_mkdir - /var/cache/rack:
+  /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/2.3.0/fileutils.rb:250:in `mkdir'
+  /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/2.3.0/fileutils.rb:250:in `fu_mkdir'
+  /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/2.3.0/fileutils.rb:227:in `block (2 levels) in mkdir_p'
+  /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/2.3.0/fileutils.rb:225:in `reverse_each'
+  /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/2.3.0/fileutils.rb:225:in `block in mkdir_p'
+  /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/2.3.0/fileutils.rb:211:in `each'
+  /home/hmtanbir/.rbenv/versions/2.3.1/lib/ruby/2.3.0/fileutils.rb:211:in `mkdir_p'
+  rack-cache (1.7.0) lib/rack/cache/meta_store.rb:233:in `initialize'
+  rack-cache (1.7.0) lib/rack/cache/meta_store.rb:276:in `new'
+  rack-cache (1.7.0) lib/rack/cache/meta_store.rb:276:in `resolve'
+  rack-cache (1.7.0) lib/rack/cache/storage.rb:38:in `create_store'
+  rack-cache (1.7.0) lib/rack/cache/storage.rb:18:in `resolve_metastore_uri'
+  rack-cache (1.7.0) lib/rack/cache/context.rb:34:in `metastore'
+  rack-cache (1.7.0) lib/rack/cache/context.rb:173:in `lookup'
+  rack-cache (1.7.0) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.7.0) lib/rack/cache/context.rb:51:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (2.0.3) lib/rack/etag.rb:25:in `call'
+  rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+  rack (2.0.3) lib/rack/head.rb:12:in `call'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+  rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+  activerecord (5.1.3) lib/active_record/migration.rb:556:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+  activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+  actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  better_errors (2.3.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.3.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.3.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+  web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+  rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+  rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+  railties (5.1.3) lib/rails/engine.rb:522:in `call'
+  puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+  puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+  puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+  puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+  puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/ce1dd63aab62efae/variables" for 127.0.0.1 at 2017-09-05 14:46:36 +0600
+Started GET "/users/1" for 127.0.0.1 at 2017-09-05 14:46:41 +0600
+Processing by Api::V1::UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.78ms)
+Completed 200 OK in 86ms (Views: 40.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-05 15:14:14 +0600
+Started GET "/" for 127.0.0.1 at 2017-09-05 15:14:16 +0600
+  [1m[35m (443.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (655.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (63.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (63.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
