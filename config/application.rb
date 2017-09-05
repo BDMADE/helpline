@@ -15,11 +15,12 @@ module Helpline
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
   config.generators do |generator|
-  generator.helper_specs false
-  generator.view_specs false
-  generator.assets false
-  generator.test_framework :rspec
+    generator.helper_specs false
+    generator.view_specs false
+    generator.assets false
+    generator.test_framework :rspec
   end
-  config.autoload_paths += %W(#{config.root}/lib)
+
+    config.autoload_paths += %W(#{config.root}/lib)
   end
 end
