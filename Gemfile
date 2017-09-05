@@ -83,3 +83,6 @@ gem 'pg', group: :production
 gem 'rack-cache', :require => 'rack/cache'
 # install gem better_error
 gem 'better_errors', '~> 2.1', '>= 2.1.1'
+
+# install devise gem for authentication
+gem 'devise'
