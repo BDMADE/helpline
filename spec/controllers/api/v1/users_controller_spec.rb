@@ -4,8 +4,6 @@ RSpec.describe Api::V1::UsersController, type: :controller do
   let(:valid_user) { FactoryGirl.attributes_for :user }
   let(:invalid_user) { FactoryGirl.attributes_for :user, name: nil }
   let(:user) { User.create! valid_user }
-  let(:user_response) { JSON.parse(response.body, symbolize_names: true) }
-  before(:each) { request.headers['Accept'] = 'application/vnd.helpline.v1' }
 
   describe 'GET #index' do
     it 'returns 200 success code' do
@@ -25,8 +23,8 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       end
 
       it 'returns the information about a reporter on a hash' do
-        expect(user_response[:email]).to eq(user.email)
-        expect(user_response[:name]).to eq(user.name)
+        expect(json_response[:email]).to eq(user.email)
+        expect(json_response[:name]).to eq(user.name)
       end
     end
 
@@ -56,7 +54,7 @@ RSpec.describe Api::V1::UsersController, type: :controller do
 
       it 'renders the json representation for the user record just created' do
         post :create, params: { user: valid_user }, format: :json
-        expect(user_response[:email]).to eql valid_user[:email]
+        expect(json_response[:email]).to eql valid_user[:email]
       end
     end
 
@@ -70,11 +68,11 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       end
 
       it 'renders an errors json' do
-        expect(user_response).to have_key(:errors)
+        expect(json_response).to have_key(:errors)
       end
 
       it 'renders the json errors on when the user could not be created' do
-        expect(user_response[:errors][:name]).to include "can't be blank"
+        expect(json_response[:errors][:name]).to include "can't be blank"
       end
     end
   end
@@ -95,7 +93,7 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       end
 
       it 'renders the json representation for the updated user' do
-        expect(user_response[:email]).to eql 'newmail@example.com'
+        expect(json_response[:email]).to eql 'newmail@example.com'
       end
     end
 
@@ -109,11 +107,11 @@ RSpec.describe Api::V1::UsersController, type: :controller do
       end
 
       it 'renders an errors json' do
-        expect(user_response).to have_key(:errors)
+        expect(json_response).to have_key(:errors)
       end
 
       it 'renders the json errors on whye the user could not be created' do
-        expect(user_response[:errors][:email]).to include 'is invalid'
+        expect(json_response[:errors][:email]).to include 'is invalid'
       end
     end
   end

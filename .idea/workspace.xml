@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34ba5e4b-2992-4c53-a26c-804f1d8af7dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__helpline.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__helpline.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec__helpline.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__helpline.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/support/request_helpers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/test.log" afterPath="$PROJECT_DIR$/log/test.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/rails_helper.rb" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" />
@@ -47,7 +43,7 @@
     <SUITE FILE_PATH="coverage/helpline@Api__V1__UsersController_PUT__update_when_user_is_not_created__helpline.coverage" NAME="Api::V1::UsersController PUT #update when user is not created: helpline Coverage Results" MODIFIED="1504625207964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="helpline" />
     <SUITE FILE_PATH="coverage/helpline@Api__V1__UsersController_POST__create_when_user_is_successfully_created_returns_200_success_code__helpline.coverage" NAME="Api::V1::UsersController POST #create when user is successfully created returns 200 success code: helpline Coverage Results" MODIFIED="1504617977242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="helpline" />
     <SUITE FILE_PATH="coverage/helpline@Api__V1__UsersController_POST__create_when_user_is_successfully_created_renders_the_json_representation_for_the_user_record_just_created__helpline.coverage" NAME="Api::V1::UsersController POST #create when user is successfully created renders the json representation for the user record just created: helpline Coverage Results" MODIFIED="1504619048427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="helpline" />
-    <SUITE FILE_PATH="coverage/helpline@Api__V1__UsersController__helpline.coverage" NAME="Api::V1::UsersController: helpline Coverage Results" MODIFIED="1504629927245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="helpline" />
+    <SUITE FILE_PATH="coverage/helpline@Api__V1__UsersController__helpline.coverage" NAME="Api::V1::UsersController: helpline Coverage Results" MODIFIED="1504633599881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="helpline" />
     <SUITE FILE_PATH="coverage/helpline@Api__V1__UsersController_POST__create_invalid_user_renders_the_json_errors_on_whye_the_user_could_not_be_created__helpline.coverage" NAME="Api::V1::UsersController POST #create invalid user renders the json errors on whye the user could not be created: helpline Coverage Results" MODIFIED="1504619597968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="helpline" />
     <SUITE FILE_PATH="coverage/helpline@users_controller.coverage" NAME="users_controller Coverage Results" MODIFIED="1504627331568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/controllers/api/v1" MODULE_NAME="helpline" />
     <SUITE FILE_PATH="coverage/helpline@Api__V1__UsersController_GET__show_invalid_user_return_error_logs__helpline.coverage" NAME="Api::V1::UsersController GET #show invalid user return error logs: helpline Coverage Results" MODIFIED="1504621719345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="helpline" />
@@ -82,16 +78,10 @@
       <file leaf-file-name="users_controller_spec.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
               <folding>
-                <element signature="e#430#556#0" expanded="false" />
-                <element signature="e#581#1206#0" expanded="false" />
-                <element signature="e#1234#2316#0" expanded="false" />
-                <element signature="e#2343#3418#0" expanded="false" />
-                <element signature="e#2524#2890#0" expanded="false" />
-                <element signature="e#2931#3412#0" expanded="false" />
-                <element signature="e#3449#3775#0" expanded="false" />
+                <element signature="e#428#1053#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -100,8 +90,18 @@
       <file leaf-file-name="rails_helper.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="31" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="request_helpers.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/support/request_helpers.rb">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+              <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -109,14 +109,24 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>, format: :json</find>
+      <find>user_response</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>json_response</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/users_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/support/request_helpers.rb" />
+        <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb" />
       </list>
     </option>
@@ -194,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.Api::V1::UsersController GET #index: helpline">
+  <component name="RunManager" selected="RSpec.Api::V1::UsersController: helpline">
     <configuration default="false" name="Api::V1::UsersController DELETE #destroy destroys the requested user: helpline" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="helpline" />
@@ -609,8 +619,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Api::V1::UsersController GET #index: helpline" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Api::V1::UsersController: helpline" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Api::V1::UsersController: helpline" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.Api::V1::UsersController GET #index: helpline" />
         <item index="2" class="java.lang.String" itemvalue="RSpec.Api::V1::UsersController POST #create valid user creates a new User: helpline" />
         <item index="3" class="java.lang.String" itemvalue="RSpec.Api::V1::UsersController DELETE #destroy: helpline" />
         <item index="4" class="java.lang.String" itemvalue="RSpec.Api::V1::UsersController DELETE #destroy destroys the requested user: helpline" />
@@ -630,44 +640,44 @@
       <updated>1504601663306</updated>
       <workItem from="1504601667296" duration="218000" />
       <workItem from="1504602522635" duration="590000" />
-      <workItem from="1504616570531" duration="12838000" />
+      <workItem from="1504616570531" duration="15591000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Api__V1__UsersController_DELETE_#destroy__helpline - 2017.09.05 at 22h 39m 22s.xml">
-      <configuration name="Api::V1::UsersController DELETE #destroy: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 22m 59s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_DELETE_#destroy__helpline - 2017.09.05 at 22h 39m 36s.xml">
-      <configuration name="Api::V1::UsersController DELETE #destroy: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 23m 23s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_DELETE_#destroy__helpline - 2017.09.05 at 22h 40m 19s.xml">
-      <configuration name="Api::V1::UsersController DELETE #destroy: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 39m 56s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_DELETE_#destroy__helpline - 2017.09.05 at 22h 40m 37s.xml">
-      <configuration name="Api::V1::UsersController DELETE #destroy: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 40m 32s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_GET_#index__helpline - 2017.09.05 at 22h 49m 17s.xml">
-      <configuration name="Api::V1::UsersController GET #index: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 41m 35s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_GET_#index__helpline - 2017.09.05 at 22h 50m 19s.xml">
-      <configuration name="Api::V1::UsersController GET #index: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 44m 21s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_GET_#index__helpline - 2017.09.05 at 22h 50m 36s.xml">
-      <configuration name="Api::V1::UsersController GET #index: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 44m 41s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_GET_#index__helpline - 2017.09.05 at 22h 50m 55s.xml">
-      <configuration name="Api::V1::UsersController GET #index: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 45m 21s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController_POST_#create_valid_user_creates_a_new_User__helpline - 2017.09.05 at 22h 44m 15s.xml">
-      <configuration name="Api::V1::UsersController POST #create valid user creates a new User: helpline" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 46m 17s.xml">
+      <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 22h 45m 36s.xml">
+    <history-entry file="Api__V1__UsersController__helpline - 2017.09.05 at 23h 46m 50s.xml">
       <configuration name="Api::V1::UsersController: helpline" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13646000" />
+    <option name="totallyTimeSpent" value="16399000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -682,7 +692,7 @@
     <frame x="40" y="-11" width="1401" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15917465" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15917465" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -743,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -767,18 +769,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/support/request_helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/api/v1/users_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
           <folding>
-            <element signature="e#430#556#0" expanded="false" />
-            <element signature="e#581#1206#0" expanded="false" />
-            <element signature="e#1234#2316#0" expanded="false" />
-            <element signature="e#2343#3418#0" expanded="false" />
-            <element signature="e#2524#2890#0" expanded="false" />
-            <element signature="e#2931#3412#0" expanded="false" />
-            <element signature="e#3449#3775#0" expanded="false" />
+            <element signature="e#428#1053#0" expanded="false" />
           </folding>
         </state>
       </provider>
