@@ -4,12 +4,14 @@ abort('The Rails environment is running in production mode!') if Rails.env.produ
 require 'rspec/rails'
 require 'factory_girl_rails'
 require 'capybara/rspec'
+require 'ffaker'
 ActiveRecord::Migration.maintain_test_schema!
 # rubocop:disable MethodLength
 RSpec.configure do |config| 
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.use_transactional_fixtures = true
-  config.infer_spec_type_from_file_location!
+  config.infer_spec_type_from_file_location!  
+  config.include Devise::TestHelpers, type: :controller
   config.filter_rails_from_backtrace!
   config.include(Shoulda::Matchers::ActiveModel, type: :model)
   config.include(Shoulda::Matchers::ActiveRecord, type: :model)
